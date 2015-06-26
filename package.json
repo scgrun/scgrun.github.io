@@ -1,0 +1,25 @@
+{
+  "name": "scgrun",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "~0.11.0",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-uglify": "~0.7.0"
+  },
+  "description": "Si Chuan Jing Run Cultural Diffusion Co. Ltd",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scgrun/scgrun.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scgrun/scgrun.github.io/issues"
+  },
+  "homepage": "https://github.com/scgrun/scgrun.github.io"
+}

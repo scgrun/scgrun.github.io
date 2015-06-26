@@ -1,0 +1,24 @@
+{
+  "name": "scgrun.github.io",
+  "version": "0.0.1",
+  "homepage": "https://github.com/scgrun/scgrun.github.io",
+  "authors": [
+    "jinke.wu <jacky_coder@163.com>"
+  ],
+  "description": "Si Chuan Jing Run Cultural Diffusion Co. Ltd",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "handlebars": "~2.0.0",
+    "bootstrap": "~3.3.4",
+    "requirejs": "~2.1.18"
+  }
+}
