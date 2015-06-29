@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <title>联系我们—四川井润文化传媒有限公司</title>
-    <link rel="stylesheet" type="text/css" 
-        href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="/assets/styles/common.css">
-    <link rel="stylesheet" type="text/css"
-        href="/assets/styles/contactus.css">
-</head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-offset-3 col-lg-6">
-        <h4 class="sub-title">地理位置</h4>
-        <div id="companyPosMap"></div>
+---
+layout: default
+title: 联系我们
+---
 
-        <h4 class="sub-title">联系方式</h4>
-        <p>QQ: 3207450466</p>
-        <p>Email: 3207450466@qq.com</p>
-    </div>
-</div>
-<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/assets/scripts/init.js"></script>
-<script type="text/javascript" src="http://api.map.baidu.com/api?ak=oLU83rVAHzKP4I7Nu3Fx8ZUk&v=1.0"></script>
-<script type="text/javascript">
-    var map = new BMap.Map("companyPosMap"),
-        point = new BMap.Point(104.081861,30.545574),
-        marker = new BMap.Marker(point);
+<h4 class="sub-title">地理位置</h4>
+<p>四川省成都市高新区天府软件园D区6栋505室</p>
 
-    map.centerAndZoom(point, 16);
-    map.addOverlay(marker);
-</script>
-</body>
-</html>
+<h4 class="sub-title">联系方式</h4>
+<p>微信：3207450466</p>
+<p>QQ: 3207450466</p>
+<p>Email: <a href="mailto:3207450466@qq.com;">3207450466@qq.com</a></p>
+<p>
+    新浪微博：
+    <a href="http://weibo.com/scjingrun" target="_blank">http://weibo.com/scjingrun</a>
+</p>
+
+<h4 class="sub-title">留言</h4>

@@ -1,0 +1,28 @@
+# Site settings
+title: 四川井润文化传媒有限公司
+email: 3207450466@qq.com
+description: ""
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.scjingrun.com" # the base hostname & protocol for your site
+
+# Static resources path
+staticurl: /assets
+
+# Lib or frame path, like jquery/bootstrap
+liburl: /assets/vendor
+
+# Build settings
+markdown: kramdown
+
+highlighter: pygments
+
+exclude:
+  - node_modules
+  - CNAME
+  - Gruntfile.js
+  - package.json
+  - README.md
+  - bower.json
+  - config.rb
+  - params.json
+  - bower_components

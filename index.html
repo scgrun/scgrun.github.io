@@ -1,19 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width initial-scale=1">
-    <title>四川井润文化传媒有限公司</title>
-    <link rel="stylesheet" type="text/css" 
-        href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="/assets/styles/common.css">
-</head>
-<body>
+---
+layout: index
+title: "四川井润文化传媒有限公司"
+---
 
-<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/assets/scripts/init.js"></script>
-</body>
-</html>
+<style>
+    .swiper-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    /* .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 400px;
+        height: 300px;
+    
+    } */
+</style>
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" 
+            style="background:url({{ "/imgs/banner/1.jpg" | prepend: site.staticurl }});background-size:cover;"></div>
+
+        <div class="swiper-slide" 
+            style="background:url({{ "/imgs/banner/2.jpg" | prepend: site.staticurl }});background-size:cover;"></div>
+
+        <div class="swiper-slide" 
+            style="background:url({{ "/imgs/banner/3.jpg" | prepend: site.staticurl }});background-size:cover;"></div>
+
+        <div class="swiper-slide" 
+            style="background:url({{ "/imgs/banner/4.jpg" | prepend: site.staticurl }});background-size:cover;"></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-4">
+          <div class="panel panel-default company-desc">
+            <div class="panel-heading">公司简介</div>
+            <div class="panel-body">
+              四川井润文化传媒有限公司
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4">
+          <div class="panel panel-default company-desc">
+            <div class="panel-heading">公司愿景</div>
+            <div class="panel-body">
+              四川井润文化传媒有限公司
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-4">
+          <div class="panel panel-default company-desc">
+            <div class="panel-heading">公司动态</div>
+            <div class="panel-body">
+              <ol class="list news">
+                {% for post in site.categories.news limit:8 offset:0 %}
+                    <li>
+                        {{ post.date | date:"%D" }}
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {% endfor %}
+                <!-- <li>
+                  <a href="">公司成立</a>
+                  <span class="pull-right">2015-06-03</span>
+                </li>
+                <li>
+                  <a href="">公司召开第一次股东大会</a>
+                  <span class="pull-right">2015-06-10</span>
+                </li>
+                <li>
+                  <a href="">公司定制公司章程</a>
+                  <span class="pull-right">2015-06-19</span>
+                </li> -->
+              </ol>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>

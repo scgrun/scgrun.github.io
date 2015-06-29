@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+{% include head.html %}
+
+<link rel="stylesheet" 
+  href="{{ "/swiper/swiper.min.css" | prepend: site.liburl }}">
+
+<link rel="stylesheet" 
+  href="{{ "/styles/home.css" | prepend: site.staticurl }}">
+<body>
+
+  {% include header.html %}
+  {{ content }}
+  {% include footer.html %}
+    
+  <script 
+    src="{{ "/jquery/dist/jquery.min.js" | prepend: site.liburl }}"></script>
+  <script 
+    src="{{ "/swiper/swiper.jquery.min.js" | prepend: site.liburl }}"></script>
+
+  <script>        
+  var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        autoplay: 5000
+    });     
+  </script>
+</body>
+</html>

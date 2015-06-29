@@ -1,20 +1,69 @@
-html, body {
+
+$theme-color: #8ec63f;
+$footer-height: 66px;
+
+html {
     height: 100%;
 }
 
 body {
     min-height: 100%;
-    height: auto;
     position: relative;
-    color: #333333;
+    padding-bottom: $footer-height;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.company-desc {
+    height: 400px;
+    overflow: hidden;
+}
+
+.page-top {
+    padding-top: 17px;
+    padding-bottom: 17px;
+
+    /* logo size: 66/66 px */
+    .logo {
+        width: 66px;
+        height: 66px;
+        float: left;
+        background-color: $theme-color;
+        margin-right: 17px;
+    }
+
+    .company-name {
+        float: left;
+        .cn {
+            font-family: "\96B6\4E66";
+        }
+
+        .en {
+            font-family: arial;
+        }
+    }
+}
+
+.list {
+    // list-style: none;
+    color: $theme-color;
+    padding-left: 15px;
+
+    li {
+        width: 100%;
+    }
+
+    a {
+        color: $theme-color;
+    }
 }
 
 footer {
+    height: $footer-height;
+    line-height: $footer-height;
     width: 100%;
-    height: 40px;
     position: absolute;
     bottom: 0;
-    text-align: center;
-    line-height: 40px;
-    font-size: 13px;
 }
