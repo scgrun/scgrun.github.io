@@ -6,9 +6,6 @@ body {
   position: relative;
   padding-bottom: 66px; }
 
-.navbar {
-  margin-bottom: 0; }
-
 .company-desc {
   height: 400px;
   overflow: hidden; }
@@ -21,7 +18,6 @@ body {
     width: 66px;
     height: 66px;
     float: left;
-    background-color: #8ec63f;
     margin-right: 17px; }
   .page-top .company-name {
     float: left; }
@@ -31,12 +27,9 @@ body {
       font-family: arial; }
 
 .list {
-  color: #8ec63f;
   padding-left: 15px; }
   .list li {
     width: 100%; }
-  .list a {
-    color: #8ec63f; }
 
 footer {
   height: 66px;

@@ -1,22 +1,9 @@
 ---
 layout: index
-title: "四川井润文化传媒有限公司"
+title: 首页
 ---
 
-<style>
-    .swiper-container {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    /* .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 400px;
-        height: 300px;
-    
-    } */
-</style>
-
+<!-- Banner, 图片轮播器 -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide" 
@@ -31,12 +18,16 @@ title: "四川井润文化传媒有限公司"
         <div class="swiper-slide" 
             style="background:url({{ "/imgs/banner/4.jpg" | prepend: site.staticurl }});background-size:cover;"></div>
     </div>
-    <!-- 如果需要分页器 -->
+    
     <div class="swiper-pagination"></div>
+
 </div>
 
+<!-- 公司说明（简介、愿景、动态） -->
 <div class="container">
   <div class="row">
+
+      <!-- 公司简介 -->
       <div class="col-lg-4">
           <div class="panel panel-default company-desc">
             <div class="panel-heading">公司简介</div>
@@ -46,6 +37,7 @@ title: "四川井润文化传媒有限公司"
           </div>
       </div>
 
+      <!-- 公司愿景 -->
       <div class="col-lg-4">
           <div class="panel panel-default company-desc">
             <div class="panel-heading">公司愿景</div>
@@ -55,6 +47,7 @@ title: "四川井润文化传媒有限公司"
           </div>
       </div>
 
+      <!-- 公司动态 -->
       <div class="col-lg-4">
           <div class="panel panel-default company-desc">
             <div class="panel-heading">公司动态</div>
@@ -62,25 +55,22 @@ title: "四川井润文化传媒有限公司"
               <ol class="list news">
                 {% for post in site.categories.news limit:8 offset:0 %}
                     <li>
-                        {{ post.date | date:"%D" }}
+                        <span class="pull-right">{{ post.date | date:"%D" }}</span>
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </li>
                 {% endfor %}
-                <!-- <li>
-                  <a href="">公司成立</a>
-                  <span class="pull-right">2015-06-03</span>
-                </li>
-                <li>
-                  <a href="">公司召开第一次股东大会</a>
-                  <span class="pull-right">2015-06-10</span>
-                </li>
-                <li>
-                  <a href="">公司定制公司章程</a>
-                  <span class="pull-right">2015-06-19</span>
-                </li> -->
               </ol>
             </div>
           </div>
       </div>
+      
   </div>
 </div>
+
+
+{% capture docExtraScripts %}
+rewrewrewrewrewwwwwwwwwwwwwww
+<script type="text/javascript">
+  console.log(dasdas);
+</script>
+{% endcapture %}

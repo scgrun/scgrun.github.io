@@ -11,30 +11,17 @@
 <body>
 
   {% include header.html %}
-  {{ content }}
-  {% include footer.html %}
-    
-  <script 
-    src="{{ "/jquery/dist/jquery.min.js" | prepend: site.liburl }}"></script>
-  <script 
-    src="{{ "/swiper/swiper.jquery.min.js" | prepend: site.liburl }}"></script>
 
-  <script>        
-  var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflow: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows : true
-        },
-        autoplay: 5000
-    });     
+  {{ content }}
+
+  {% include footer.html %}
+  
+  <script src="{{ "/requirejs/require.js" | prepend: site.liburl }}"></script>
+
+  <script src="{{ "/scripts/requireConfig.js" | prepend: site.staticurl }}"></script>
+  
+  <script type="text/javascript">
+  require(["bootstrap", "page/common", "page/home"]);
   </script>
 </body>
 </html>

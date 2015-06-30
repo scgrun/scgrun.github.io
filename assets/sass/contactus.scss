@@ -1,3 +1,14 @@
-#companyPosMap {
-    height: 400px;
+.contact-method-title {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    line-height: 35px;
+}
+
+.contact-methods {
+    list-style: none;
+    padding: 0;
+
+    li {
+        padding: 10px 0;
+    }
 }

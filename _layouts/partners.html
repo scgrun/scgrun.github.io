@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+{% include head.html %}
+
+<body>
+
+  {% include header.html %}
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+    
+<script src="{{ "/requirejs/require.js" | prepend: site.liburl }}"></script>
+
+<script src="{{ "/scripts/requireConfig.js" | prepend: site.staticurl }}"></script>
+  
+<script type="text/javascript">
+require(["bootstrap", "page/common"]);
+</script>
+</body>
+</html>

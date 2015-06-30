@@ -1,6 +1,4 @@
-
-$theme-color: #8ec63f;
-$footer-height: 66px;
+@import "var";
 
 html {
     height: 100%;
@@ -10,10 +8,6 @@ body {
     min-height: 100%;
     position: relative;
     padding-bottom: $footer-height;
-}
-
-.navbar {
-    margin-bottom: 0;
 }
 
 .company-desc {
@@ -30,7 +24,7 @@ body {
         width: 66px;
         height: 66px;
         float: left;
-        background-color: $theme-color;
+        // background-color: $theme-color;
         margin-right: 17px;
     }
 
@@ -48,7 +42,7 @@ body {
 
 .list {
     // list-style: none;
-    color: $theme-color;
+    // color: $theme-color;
     padding-left: 15px;
 
     li {
@@ -56,7 +50,7 @@ body {
     }
 
     a {
-        color: $theme-color;
+        // color: $theme-color;
     }
 }
 

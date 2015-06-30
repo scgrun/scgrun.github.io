@@ -1,9 +1,13 @@
 # Site settings
 title: 四川井润文化传媒有限公司
 email: 3207450466@qq.com
-description: ""
+description: "四川井润文化传媒有限公司，一家从事广告推广，精准化投递广告的公司。"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.scjingrun.com" # the base hostname & protocol for your site
+
+enterprise_name_cn: 四川井润文化传媒有限公司
+enterprise_name_en: Si Chuan Jing Run Cultural Diffusion Co. Ltd
+
 
 # Static resources path
 staticurl: /assets
