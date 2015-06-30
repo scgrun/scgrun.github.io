@@ -21,4 +21,8 @@ define(["jquery"], function($) {
 
     $copyrightYear.text((new Date()).getFullYear());
     
+    console.log("Powered by JackyCoder!\nWebsite:%s\nEmail:%s\nQQ:%s", 
+        "http://www.lnkfile.com", 
+        "jacky_coder@163.com",
+        "295687784");
 });

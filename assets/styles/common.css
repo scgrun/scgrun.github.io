@@ -26,6 +26,15 @@ body {
     .page-top .company-name .en {
       font-family: arial; }
 
+.navbar-brand {
+  display: none; }
+
+@media screen and (max-width: 767px) {
+  .page-top {
+    display: none; }
+
+  .navbar-brand {
+    display: inline-block; } }
 .list {
   padding-left: 15px; }
   .list li {

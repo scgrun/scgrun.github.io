@@ -40,6 +40,20 @@ body {
     }
 }
 
+.navbar-brand {
+    display: none;  
+}
+
+@media screen and (max-width: 767px) {
+    .page-top {
+        display: none;
+    }
+
+    .navbar-brand {
+        display: inline-block;
+    }
+}
+
 .list {
     // list-style: none;
     // color: $theme-color;
