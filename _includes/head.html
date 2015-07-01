@@ -12,6 +12,8 @@
     </title>
 
     <meta name="description" content="{% if page.desc %}{{ page.desc | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <meta name="keywords" content="{{ site.enterprise_name_cn }},{{ page.keywords }}">
     
     <link rel="shortcut icon" href="{{ "/imgs/logo.jpg" | prepend: site.staticurl }}">
     
