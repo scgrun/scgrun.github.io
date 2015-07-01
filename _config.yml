@@ -30,3 +30,5 @@ exclude:
   - config.rb
   - params.json
   - bower_components
+
+port: 8080
